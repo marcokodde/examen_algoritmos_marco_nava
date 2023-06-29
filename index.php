@@ -28,7 +28,7 @@
                             <fieldset>
                                 $ejemlo = "hola mundo hola de hola mundo"
                             </fieldset>
-                            <input class="form-control" type="text" name="txt">
+                            <input class="form-control" type="text" name="txt" required>
                             <button class="btn btn-success" name="submit">
                                 Leer Cadena
                             </button>
