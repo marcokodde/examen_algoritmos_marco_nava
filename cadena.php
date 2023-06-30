@@ -9,5 +9,28 @@ if (isset($_POST['txt'])) {
     $txt = explode(',', $txt);
     $txt = array_count_values($txt);
     arsort($txt);
-    print_r($txt);
 }
+?>
+
+<?php
+if ($txt) {
+?>
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <form class="form">
+                <div class="alert alert-info">
+                    <b>Este es el conteo de palabras:</b>
+                    <i>
+                        <?php
+                        print_r($txt);
+                        ?>
+                    </i>
+                </div>
+
+            </form>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+<?php }
+?>

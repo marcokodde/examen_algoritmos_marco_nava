@@ -21,5 +21,27 @@ if (isset($_POST['uno']) && $_POST['uno_b']) {
     }
     $result[0] = $a;
     $result[1] = $b;
-    print_r($result);
 }
+?>
+<?php
+if ($result) {
+?>
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <form class="form">
+                <div class="alert alert-info">
+                    <b>Estos son tus resultados:</b>
+                    <i>
+                        <?php
+                        echo "Alice [" . $result[0] . "," . $result[1] . "] Bob";
+                        ?>
+                    </i>
+                </div>
+
+            </form>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+<?php }
+?>
