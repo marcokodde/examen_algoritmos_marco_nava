@@ -13,7 +13,10 @@ if (isset($_POST['uno']) && $_POST['uno_b']) {
     $b = 0;
 
     foreach ($alice as $clave => $valor) {
-        if ($alice[$clave] > $bob[$clave]) {
+        if ($alice[$clave] == $bob[$clave]) {
+            $a = $a + 0;
+            $b = $b + 0;
+        } elseif ($alice[$clave] > $bob[$clave]) {
             $a = $a + 1;
         } else {
             $b = $b + 1;

@@ -8,7 +8,7 @@
                 <div class="col-md-6">
                     <div class="card">
                         <form action="algoritmo.php" method="POST">
-                            <label for="alice">Ejemplo</label>
+                            <label for="alice">Ejemplo.</label>
                             <fieldset>
                                 $alice = [17, 28, 30];
                             </fieldset>
@@ -40,7 +40,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn btn-success" name="submit">
+                            <button class="btn btn-success m-1" name="submit">
                                 Leer Algoritmo
                             </button>
                         </form>
@@ -50,11 +50,12 @@
                 <div class="col-md-6">
                     <div class="card">
                         <form action="cadena.php" method="POST">
+                            <label for="alice">Ejemplo.</label>
                             <fieldset>
-                                $ejemlo = "hola mundo hola de hola mundo"
+                                "Hola mundo hola de hola mundo."
                             </fieldset>
-                            <input class="form-control" type="text" name="txt" required>
-                            <button class="btn btn-success" name="submit">
+                            <input class="form-control px-2" type="text" style="height:80px" name="txt" required>
+                            <button class="btn btn-success m-1" name="submit">
                                 Leer Cadena
                             </button>
                         </form>
